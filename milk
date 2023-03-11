@@ -1,0 +1,147 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[3]:
+
+
+import matplotlib.pyplot as plt
+x=[15,18,48]
+y=[10,5,6]
+plt.plot(x,y, color='brown',marker='o')
+plt.plot(x,y)
+plt.xlabel('ось x')
+plt.ylabel('ось y')
+plt.title('Том')
+plt.show
+
+
+# In[20]:
+
+
+import matplotlib.pyplot as plt
+x=['Эпл','Самсунг','Хонор','НТС','Поко']
+y=[1016,516,126,156,12]
+plt.bar(x,y)
+plt.plot(x,y, color='Brown')
+plt.xlabel('Наминование компаний')
+plt.ylabel('Кол-во продаж')
+plt.title('V продаж смотфонов')
+plt.grid()
+plt.show
+
+
+# In[21]:
+
+
+import matplotlib.pyplot as plt
+vals=[1016,516,126,156,12]
+labels=['Apple','НТС','Samsung','Alcatel','Honor']
+plt.pie(vals,labels=labels)
+plt.title('V продаж')
+plt.show()
+
+
+# In[24]:
+
+
+get_ipython().system('pip3 install ColabTurtle')
+from ColabTurtle.Turtle import*
+
+
+# In[25]:
+
+
+initializeTurtle()
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+
+
+# In[26]:
+
+
+initializeTurtle()
+left(60)
+forward(50)
+left(60)
+forward(50)
+left(60)
+forward(50)
+left(60)
+forward(50)
+left(60)
+forward(50)
+left(60)
+forward(50)
+
+
+# In[28]:
+
+
+initializeTurtle()
+for i in range(0,6): 
+    left(60)
+    forward(50)
+
+
+# In[29]:
+
+
+initializeTurtle()
+for i in range(0,6): 
+    left(60)
+    forward(50)
+left(120)
+forward(50)
+right(60)
+forward(50)
+backward(50)
+left(120)
+forward(50)
+
+hideturtle()
+
+
+# In[31]:
+
+
+initializeTurtle()
+penuo()
+sety(100)
+left(90)
+pendown()
+
+speend(13)
+for i in range(0,60):
+    forward(12)
+    left(6)
+penup()
+home()
+goto(450,150)
+left(90)
+pendown()
+
+for i in range(0,60):
+    forward(3)
+    left(6)
+penup()
+home()
+goto(350,150)
+left(90)
+pendown()
+
+
+for i in range(0,60):
+    forward(3)
+    left(6)
+
+
+# In[ ]:
+
+
+
+
