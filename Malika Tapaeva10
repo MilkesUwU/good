@@ -1,0 +1,116 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import math
+r=int(input())
+pi=math.pi
+t=2*pi*r
+print(t)
+
+
+# In[2]:
+
+
+import math
+math.e
+
+
+# In[3]:
+
+
+import math
+math.pi
+
+
+# In[4]:
+
+
+import random
+a=[1,5,62,89,'Black',70]
+e=random.choice(a)
+print(e)
+
+
+# In[5]:
+
+
+import random
+random.randrange(1000)
+
+
+# In[6]:
+
+
+import random
+random.random()
+
+
+# In[7]:
+
+
+import random
+random.randint(1,100)
+
+
+# In[8]:
+
+
+import random
+a=[1,2,3,4,5,"Al",10]
+random.shuffle(a)
+print(a)
+
+
+# In[9]:
+
+
+import random
+print ('Добро пожаловать в розыгрыш приз')
+t=['Al','Fe','Pb','Cl','H20']
+print('Победитель розыгрыша', random.choice(t))
+
+
+# In[20]:
+
+
+import random
+i=input('Введите имя первого игрока:')
+t=input('Введите имя второго играка: \n')
+w=[1,2,3,4,5,6,7,8,9,10]
+h=[1,2,3,4,5,6,7,8,9,10]
+ScoreOne=0
+ScoreTwo=0
+def thowDise():
+    for j in range(5):
+        random.shuffle(w)
+        random.shuffle(h)
+    return w[0]+ h[0]
+for j in range(3):
+    result = thowDise()
+    ScoreOne += result
+    print('Игрок', i,'Выбросил:', result)
+    print('Сумма очков у игрока', i,':', ScoreOne)
+    z=input('Чтобы сделать следующий бросок,нажмите Enter \n')
+    result = thowDise()
+    ScoreTwo += result
+    print('Игрок',t,'выбросил:',result)
+    print('Сумма очков у игрока',t,':', ScoreTwo)
+    z=input('Чтобы сделать следующий бросок,нажмите Enter \n')
+if (i>t):
+    print('Игорок', i,'победил!')
+    print(i,'набрад',ScoreTwo, 'очков!')
+elif (i<t):
+    print('Игорок', t,'победил!')
+    print(t,'набрад',ScoreTwo, 'очков!')
+else:
+    print('Ничья!')
+
+
+# In[ ]:
+
+
+
+
